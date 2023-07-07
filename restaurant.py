@@ -52,7 +52,7 @@ def takeOrder(ItemNo):
         bill(ItemNo, Quantity)
     else:
        os.system('cls')
-       print("\nEnter the item number, Sn. numberof item you want to order.\neg: enter 2 if you want samosa\n")
+       print("\nEnter the item number, Sn. number of item you want to order.\neg: enter 1 if you want Chomin \n")
        printList()
        takeOrder(0)
 
