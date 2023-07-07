@@ -24,9 +24,9 @@ def welcome():
 
 
 def ThankYou():
-    print('''\n\n\n\n
-Thank you :)
--Visit us again
+    print('''
+                                         Thank you :)
+                                         -Visit us again
     ''')
 
 
@@ -61,7 +61,6 @@ def orderList(ItemNo,Quantity):
         tempOrderList = f"{name[ItemNo]}"
     else:
         tempOrderList = f"{name[ItemNo][:-1]}"
-    # myList.append(f"")
     tempOrderList = f"{tempOrderList}" + " => "+ f"{Quantity}"
     myList.append(tempOrderList)
     # print(myList)     //not printig here to make the ui more clean
@@ -90,10 +89,19 @@ def bill(item, Quantity):
 
 
 def printBill(itemList,itemAmount):
+    totalAmount = 0
     print("\n\nYour total bill is:")
     print("\nSn. Items\t\tRate\tQuantity\tCost")
     for i in range(len(itemAmount)):
         print(f"{i+1}: {itemList[i]}\t\t{itemRate[i]}\t{itemQuantity[i]}\t\tRs.{itemAmount[i]}")
+        totalAmount = totalAmount+ itemAmount[i]
+    print(f"""
+
+
+-----------------------------------------------------
+                                      Total: Rs.{totalAmount}
+""")
+    
 
 checkLenght(name, rate)  #this check the if all item has rate or not
 welcome()
