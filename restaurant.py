@@ -1,6 +1,6 @@
 import os
-name = ["Chomin", "momo\t", "Samosa", "Chicken", "Pizza"]
-rate = [70, 120, 20, 250, 320]
+name = ["Chomin", "momo\t","Noodles", "Samosa", "Chicken", "Pizza","Mushroom","Mix Veg","Sandwich","Burger"]
+rate = [70, 120, 20,130, 250, 320,410,280,250,340]
 vat = 13
 discount = 10
 myList = []
@@ -133,7 +133,7 @@ def printBill(itemList, itemAmount):
           
           -----Bill-----
 
-          
+
 ''')
     print("\nSn. Items\tRate\tQuantity\tCost")
     for i in range(len(itemAmount)):
